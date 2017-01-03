@@ -4,10 +4,7 @@ layout: base
 
 <div class="container posts">
   <div class="row">
-    <div class="col-md-3">
-      {% include sidebar.html %}
-    </div>
-    <div class="col-md-7">
+    <div class="col-md-8 offset-md-2">
       {% for post in site.posts limit:5 %}
       {% include post-stub.html post=post %}
       {% endfor %}
@@ -20,4 +17,5 @@ layout: base
       <p class="text-centered"><em>There are no posts to show here.</em></p>
       {% endif %}
     </div>
+  </div>
 </div>

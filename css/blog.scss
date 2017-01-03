@@ -41,29 +41,37 @@ h3 {
     }
 }
 
-body > header {
+.header {
     background: #333;
     height: 59px;
     line-height: 59px;
     margin-bottom: 15px;
 
-    .navbar-brand {
+    &-brand {
         float: none;
         padding: 0;
         line-height: 59px;
 
+        &:hover {
+            text-decoration: none;
+        }
+
         img {
             position: relative;
-            top: -2px;
+            top: -4.5px;
         }
     }
 
-    .nav-title {
+    &-title {
+        padding-left: 5px;
         font-size: 20px;
+        color: white;
+        font-weight: 100;
     }
 
-    .nav-text {
+    &-text {
         color: white;
+        font-weight: 100;
 
         & a {
             color: white;
@@ -71,46 +79,38 @@ body > header {
     }
 }
 
-sidebar {
-    h3 {
-        color: #666;
-    }
-
-    section:not(:first-of-type) {
-        padding-top: 14px;
-    }
-
-    a {
-        color: #999;
-    }
-
-    .topic:not(:last-of-type), .recommendation:not(:last-of-type) {
-        padding-bottom: 7px;
-    }
-}
-
 .article {
-    &.excerpt {
-        padding-bottom: 14px;
+    &.excerpt:not(:last-of-type) {
+        margin-bottom: 42px;
+        border-bottom: 1px solid #ddd;
     }
 
     &-tags {
-        color: #666;
+        color: #999;
     }
 
     &-title {
         padding: 7px 0;
+
+        a {
+            color: #333;
+        }
     }
 
     &-header {
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #f1f1f1;
         padding-bottom: 14px;
         margin-bottom: 14px;
     }
 }
 
-footer {
+.source {
+    padding-bottom: 14px;
+}
+
+.footer {
     padding: 14px 0;
+    border-top: 1px solid #ddd;
 }
 
 @import "./syntax.scss";

@@ -13,9 +13,6 @@ rolling out labels for the majority of resources that didn't use them, as well a
 some bug fixes and assorted improvements.  We've also laid the foundation for
 upcoming features.
 
-&nbsp;
-
-
 ## Labels as Identifiers
 
 Last time, we introduced labels as the identifier for Datacenters,

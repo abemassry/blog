@@ -4,10 +4,7 @@ layout: base
 
 <div class="container">
   <div class="row">
-    <div class="col-md-3">
-      {% include sidebar.html %}
-    </div>
-    <div class="col-sm-7">
+    <div class="col-md-8 offset-md-2">
       <article>
         <div class="article-tags">{{ page.tags | join: ", " }}</div>
         <h1 class="article-title">{{ page.title }}</h1>

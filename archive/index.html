@@ -4,10 +4,7 @@ layout: base
 
 <div class="container posts">
   <div class="row">
-    <div class="col-md-3">
-      {% include sidebar.html %}
-    </div>
-    <div class="col-md-7">
+    <div class="col-md-8 offset-md-2">
       {% for post in paginator.posts %}
       {% include post-stub.html post=post %}
       {% endfor %}
