@@ -78,6 +78,14 @@ h3 {
         padding: 2px 5px;
         border-radius: 2px;
         font-size: 12px;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: black;
+            background: white;
+            text-decoration: none;
+        }
     }
 }
 
