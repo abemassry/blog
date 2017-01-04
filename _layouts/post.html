@@ -10,8 +10,8 @@ layout: base
         <h1 class="article-title">{{ page.title }}</h1>
         <header class="article-header text-muted">
           <span class="article-date">{{ page.date | date_to_string }}</span>, by
-          <span class="article-author">{{ page.author }}</span>
           <img class="article-avatar" src="{{ page.avatar }}" alt="{{ page.author }}" width="25" />
+          <span class="article-author">{{ page.author }}</span>
         </header>
         <div class="article-content">
           {{ content }}
