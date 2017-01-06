@@ -4,15 +4,14 @@ title: API Alpha Label Rollout
 layout: post
 author: William Smith
 avatar: https://www.linode.com/media/images/employees/wsmith.png
+tags:
+- APIv4
 ---
 After two more weeks of brain power and coffee, we have another fresh batch of
 updates for the API V4 Alpha!  This time around we've put a lot of effort into
 rolling out labels for the majority of resources that didn't use them, as well as
 some bug fixes and assorted improvements.  We've also laid the foundation for
 upcoming features.
-
-&nbsp;
-
 
 ## Labels as Identifiers
 

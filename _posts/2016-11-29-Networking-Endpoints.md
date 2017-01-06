@@ -3,6 +3,7 @@ title: Networking Endpoints
 author: Josh Sager
 avatar: https://www.linode.com/media/images/employees/jsager.png
 layout: post
+tags: [APIv4]
 ---
 
 Happy Holidays, everyone! The season of cheer has officially begun, and

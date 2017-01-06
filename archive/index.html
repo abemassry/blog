@@ -2,25 +2,27 @@
 layout: base
 ---
 
-{% include header.html %}
 <div class="container posts">
-    {% for post in paginator.posts %}
-    {% include post-stub.html post=post %}
-    {% endfor %}
-    {% if paginator.previous_page %}
-    <div class="pull-left" style="margin-bottom: 2rem;">
-        <a href="{{paginator.previous_page_path}}/" class="btn btn-info">
-            <i class="fa fa-caret-left"></i>
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      {% for post in paginator.posts %}
+      {% include post-stub.html post=post %}
+      {% endfor %}
+      <div class="clearfix">
+        {% if paginator.previous_page %}
+        <div class="float-xs-left">
+          <a href="{{paginator.previous_page_path}}" class="btn btn-primary">
             Page {{paginator.previous_page}}
-        </a>
-    </div>
-    {% endif %}
-    {% if paginator.next_page %}
-    <div class="pull-right" style="margin-bottom: 2rem;">
-        <a href="{{paginator.next_page_path}}/" class="btn btn-info">
+          </a>
+        </div>
+        {% endif %}
+        {% if paginator.next_page %}
+        <div class="text-xs-right">
+          <a href="{{paginator.next_page_path}}" class="btn btn-primary">
             Page {{paginator.next_page}}
-            <i class="fa fa-caret-right"></i>
-        </a>
+          </a>
+        </div>
+        {% endif %}
+      </div>
     </div>
-    {% endif %}
 </div>
