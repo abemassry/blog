@@ -41,6 +41,10 @@ h3 {
     }
 }
 
+.fa-rss {
+    color: white;   
+}
+
 .header {
     background: #333;
     height: 59px;
@@ -60,6 +64,10 @@ h3 {
             position: relative;
             top: -4.5px;
         }
+    }
+    
+    &-rss {
+        padding-left: 5px;
     }
 
     &-title {
