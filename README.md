@@ -1,6 +1,6 @@
-# engineering.linode.com
+# engineering notes
 
-This is the [Linode engineering blog](https://engineering.linode.com/). It's a jekyll site hosted on GitHub Pages.
+These are notes about engineering at Linode, in blog format.
 
 ## Running
 
